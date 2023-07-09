@@ -59,19 +59,20 @@ def run_game():
 
     print("Starting Game Rock-Paper-Scissors")
 
-    computer_choice = generate_computers_choice()
-    player_choice = get_players_choice()
-
-    determine_winner(computer_choice, player_choice)
-
-
-# Main - code to call game
-if __name__ == "__main__":
-
     while True:
-        run_game()
+        computer_choice = generate_computers_choice()
+        player_choice = get_players_choice()
+        determine_winner(computer_choice, player_choice)
 
         choice = input("Another Go (Y/N): ").upper()
         if choice != "Y":
             print("Exiting Game Rock-Paper_Scissors")
             break
+
+
+
+
+# Main - code to call game
+if __name__ == "__main__":
+
+    run_game()

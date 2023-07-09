@@ -4,7 +4,7 @@ def top_menu():
     """Print top menu listing available games to play"""
 
     print(
-"""Games List
+"""\n---GAMES LIST---
 (1) Number Guess Game
 (2) Rock Paper Scissors
 """)
@@ -24,4 +24,5 @@ def top_menu():
 
  # Main - code to call menu
 if __name__ == "__main__":
-    top_menu()
+    while True:
+        top_menu()
